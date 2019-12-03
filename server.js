@@ -11,7 +11,7 @@ db.once('open', () => console.log('connected to database'))
 app.use(cors())
 app.use(express.json())
 
-const subscribersRouter = require('./routes/subscribers')
-app.use('/subscribers', subscribersRouter)
+const favoritesRouter = require('./routes/favorites')
+app.use('/RijksStrike', favoritesRouter)
 
 app.listen(3000, () => console.log('server started'))

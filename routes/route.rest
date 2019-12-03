@@ -1,28 +1,27 @@
-GET http://localhost:3000/subscribers
+GET http://localhost:3000/RijksStrike
 
 ###
 
-GET http://localhost:3000/subscribers/5dd6d78b6a4fb304439280c5
+GET http://localhost:3000/RijksStrike/rembrandt
 
 ###
 
-POST http://localhost:3000/subscribers
+GET http://localhost:3000/RijksStrike/5dd6d78b6a4fb304439280c5
+
+###
+
+POST http://localhost:3000/RijksStrike
 Content-Type: application/json
 
 {
-  "name": "bob",
-  "subscribedChannel": "Bennetts Channel"
+  "RijksID": "nl-SK-C-216",
+  "fvComment": "John & Ben"
 }
 
 ###
 
-DELETE http://localhost:3000/subscribers/5dd6d9b7ee43f004c0ee7630
+DELETE http://localhost:3000/RijksStrike/5dd6d78b6a4fb304439280c5
 
 ###
 
-PATCH http://localhost:3000/subscribers/5dd6d78b6a4fb304439280c5
-Content-Type: application/json 
-
-{
-  "name": "Tommy"
-}
+PATCH http://localhost:3000/RijksStrike/5de609e126ed9078de4ef799/John & Ben
